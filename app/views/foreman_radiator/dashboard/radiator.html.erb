@@ -1,13 +1,13 @@
   <table class="node_summary">
 
     <tr class='unresponsive'>
-      <td class='count'><%= @report[:reports_missing] %> </td>
+      <td class='count_column'><span class='count'><%= @report[:reports_missing] %></span></td>
       <td>
 		<div>
 			<p class="label">
 				<span><%= 'Unresponsive' %></span>
 			</p>
-			<p class="percent" style="width: <%= @perc_unresponsive %>;">
+			<p class="percent" style="width: <%= @perc_unresponsive %>">
 				<span><%= 'Unresponsive' %></span>
 			</p>
 		</div>
@@ -15,26 +15,26 @@
 	</tr>
 
     <tr class='failed'>
-      <td class='count'><%= @report[:bad_hosts_enabled] %> </td>
+      <td class='count_column'><span class='count'><%= @report[:bad_hosts_enabled] %></span></td>
       <td>
 		<div>
 			<p class="label">
 				<span><%= 'Failed' %></span>
 			</p>
-			<p class="percent" style="width: <%= @perc_failed %>;">
+			<p class="percent" style="width: <%= @perc_failed %>">
 				<span><%= 'Failed' %></span>
 			</p>
 		</div>
 	  </td>
     </tr>
     <tr class='pending'>
-      <td class='count'><%= @report[:pending_hosts_enabled] %> </td>
+      <td class='count_column'><span class='count'><%= @report[:pending_hosts_enabled] %></span></td>
       <td>
 		<div>
 			<p class="label">
 				<span><%= 'Pending' %></span>
 			</p>
-			<p class="percent" style="width: <%= @perc_pending %>;">
+			<p class="percent" style="width: <%= @perc_pending %>">
 				<span><%= 'Pending' %></span>
 			</p>
 		</div>
@@ -42,7 +42,7 @@
     </tr>
 
     <tr class='changed'>
-      <td class='count'><%= @report[:active_hosts_ok_enabled] %> </td>
+      <td class='count_column'><span class='count'><%= @report[:active_hosts_ok_enabled] %></span></td>
       <td>
 		<div>
 			<p class="label">
@@ -56,7 +56,7 @@
     </tr>
 
     <tr class='unchanged'>
-      <td class='count'><%= @report[:ok_hosts_enabled] %> </td>
+      <td class='count_column'><span class='count'><%= @report[:ok_hosts_enabled] %></span></td>
       <td>
 		<div>
 			<p class="label">
@@ -70,7 +70,7 @@
     </tr>
 
     <tr class='unreported'>
-      <td class='count'><%= @report[:out_of_sync_hosts_enabled] %> </td>
+      <td class='count'><span class='count'><%= @report[:out_of_sync_hosts_enabled] %></span></td>
       <td>
 		<div>
 			<p class="label">
@@ -84,7 +84,7 @@
     </tr>
 
     <tr class='total'>
-      <td class='count'><%= @report[:total_hosts] %> </td>
+      <td class='count_column'><span class='count'><%= @report[:total_hosts] %></span></td>
       <td>
 		<div>
 			<p class="label">

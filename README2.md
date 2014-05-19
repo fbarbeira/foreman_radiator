@@ -5,7 +5,7 @@ The management did by istrade it´s better because you don´t have to touch the 
 
 1 - Create the dir "foreman/public/javascripts/radiator/" and place there the js files.
 
-2 - Create the dir "foreman/public/css/radiator/" and place there the css files.
+2 - Create the dir "foreman/public/stylesheets/radiator/" and place there the css files.
 
 3 - Remember to use the right user owner in these files, in my case "foreman". 
 

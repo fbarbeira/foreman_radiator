@@ -4,7 +4,7 @@ module ForemanRadiator
     layout 'foreman_radiator/layouts/application_radiator'
 
     def radiator
-      dashboard = Dashboard.new(params[:search])
+      dashboard = Dashboard::Data.new(params[:search])
       @hosts    = dashboard.hosts
       @report   = dashboard.report
 
